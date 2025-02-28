@@ -1,0 +1,169 @@
+/* explore.css */
+
+/* == Global Font Settings (Ensure Consistency) == */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Standard font size across all pages */
+    line-height: 1.5;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+/* == Body Layout: Sidebar + Content Side by Side == */
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+/* ===== Sidebar Navigation (Same as Home) ===== */
+.side-nav {
+    width: 240px;
+    height: 100vh;
+    background: #fff;
+    padding: 20px;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+} 
+
+/* == Main Content Aligned Right of Sidebar== */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Greeting Title */
+.greeting-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* == Explore Categories (Horizontal Scroll) == */
+.explore-categories {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.category-card {
+    flex: 0 0 auto;
+    background: #f5f5f5;
+    padding: 20px;
+    height: 500px;
+    min-height:200px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 800px;
+    min-width:200px;
+    text-align: center;
+}
+
+/* == Artist Grid == */
+.artist-grid {
+    display: grid;
+    /*grid-template-columns: repeat(auto-fill, minmax(150px, 3fr));*/
+    grid-template-columns: repeat(4, 2fr);
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.artist-card {
+    background: #eee;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    height: 200px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+/* Sidebar Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1db954;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Sidebar Menu */
+.nav-menu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Nav Items */
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.2s;
+}
+
+.nav-item:hover {
+    background: #f5f5f7;
+}
+
+/* Highlight the "Explore" Section */
+.nav-item.active {
+    background: #1db95420;
+    color: #1db954;
+}
+
+/* Icon & Text Alignment */
+.nav-icon {
+    width: 24px;
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.nav-text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Playlist Section */
+.playlist-section {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.section-title {
+    font-size: 12px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 15px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .side-nav {
+        width: 72px;
+    }
+
+    .main-content {
+        margin-left: 90px;
+    }
+
+    .explore-categories {
+        flex-wrap: wrap;
+    }
+
+    .artist-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}

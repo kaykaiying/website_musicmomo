@@ -1,0 +1,128 @@
+<!-- playlist.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Radio - Music MoMo</title>
+    <link rel="stylesheet" href="playlist.css">
+</head>
+<body>
+
+    <!-- Left Sidebar Navigation -->
+    <nav class="side-nav">
+        <div class="logo">Music MoMo</div>
+        
+        <!-- Vertical Nav Menu -->
+        <div class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="explore.html" class="nav-item">
+                <span class="nav-icon">🔍</span>
+                <span class="nav-text">Explore</span>
+            </a>
+            <a href="library.html" class="nav-item">
+                <span class="nav-icon">📚</span>
+                <span class="nav-text">Library</span>
+            </a>
+            <a href="songradio.html" class="nav-item">  
+                <span class="nav-icon">🎵</span>
+                <span class="nav-text">Song Radio</span>
+            </a>
+        </div>
+
+        <!-- Playlist Section -->
+        <div class="playlist-section">
+            <h3 class="section-title">PLAYLISTS</h3>
+            <a href="playlist.html" class="nav-item active"> <!-- favorites is now active -->
+                <span class="nav-icon">❤️</span>
+                <span class="nav-text">Favorites</span>
+            </a>
+            <a href="playlist.html" class="nav-item">
+                <span class="nav-icon">⏳</span>
+                <span class="nav-text">Recently Played</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h1 class="greeting-title">My Playlist</h1>
+
+        <!-- Playlist Table -->
+        <section class="playlist-table">
+            <div class="playlist-header">
+                <span>#</span>
+                <span>Title</span>
+                <span>Artist</span>
+                <span>Album</span>
+                <span>Favorite</span>
+                <span>Duration</span>
+            </div>
+
+            <div class="playlist-item">
+                <span>1</span>
+                <div class="song-info">
+                    <div class="song-cover"></div>
+                    <span>1874</span>
+                </div>
+                <span>Artist Name</span>
+                <span>The Line-Up</span>
+                <span class="heart">❤️</span>
+                <span>03:50</span>
+            </div>
+
+            <div class="playlist-item">
+                <span>2</span>
+                <div class="song-info">
+                    <div class="song-cover"></div>
+                    <span>Listen Anytime</span>
+                </div>
+                <span>Artist Name</span>
+                <span>Happiness</span>
+                <span class="heart empty">♡</span>
+                <span>03:26</span>
+            </div>
+
+            <div class="playlist-item">
+                <span>3</span>
+                <div class="song-info">
+                    <div class="song-cover"></div>
+                    <span>Baby Song</span>
+                </div>
+                <span>Artist Name</span>
+                <span>Hello</span>
+                <span class="heart">❤️</span>
+                <span>03:18</span>
+            </div>
+
+            <div class="playlist-item">
+                <span>4</span>
+                <div class="song-info">
+                    <div class="song-cover"></div>
+                    <span>Throwback</span>
+                </div>
+                <span>Artist Name</span>
+                <span>The Key</span>
+                <span class="heart empty">♡</span>
+                <span>03:57</span>
+            </div>
+
+            <div class="playlist-item">
+                <span>5</span>
+                <div class="song-info">
+                    <div class="song-cover"></div>
+                    <span>Workout Vibes</span>
+                </div>
+                <span>Artist Name</span>
+                <span>The Key</span>
+                <span class="heart">❤️</span>
+                <span>04:38</span>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
